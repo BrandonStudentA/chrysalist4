@@ -1,5 +1,6 @@
 class AdminsController < ApplicationController
-  before_action :set_admin, only: [:show, :update, :destroy]
+  before_action :set_admin, only: [:create, :show, :update, :destroy]
+  before_action :authorize_request, except: [:index, :show]
 
   # GET /admins
   def index
@@ -42,10 +43,12 @@ class AdminsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_admin
       @admin = Admin.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      render json: { message: 'no admin matches that ID' }, status: 404
     end
 
     # Only allow a trusted parameter "white list" through.
     def admin_params
-      params.require(:admin).permit(:username, :email, :password_digest)
+      params.require(:admin).permit(:username, :email, :password)
     end
 end
