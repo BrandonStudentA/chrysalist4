@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+User.delete_all()
+user1 = User.create!(username: 'Brandon', email: "brandonstudenta@gmail.com", password: "123457" )
 
-Admin.create!(username: 'Dustin', email: "dusty@gmail.com", password: "123457" )
+mood1 = Mood.create!(title:'sad')
 
-User.create!(username: 'Brandon', email: "brandonstudenta@gmail.com", password: "123457" )
+Remedy.create(title:"Excersice Streches", mood_id:mood1.id, user_id:user1.id)

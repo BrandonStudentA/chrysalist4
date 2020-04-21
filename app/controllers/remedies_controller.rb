@@ -1,6 +1,6 @@
 class RemediesController < ApplicationController
   before_action :set_remedy, only: [:show, :update, :destroy]
-
+  before_action :authorize_request, except: [:index, :show]
   # GET /remedies
   def index
     @remedies = Remedy.all

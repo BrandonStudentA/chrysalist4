@@ -30,10 +30,7 @@ export const verifyUser = async () => {
   return false
 }
 
-export const createUser = async (data) => {
-  const resp = await api.post('/users', { user: data })
-  return resp.data
-}
+
 
 export const removeToken = () => {
   api.defaults.headers.common.authorization = null;
@@ -52,4 +49,10 @@ export const updateUser = async (id, data) => {
 export const destroyUser = async (id) => {
   const resp = await api.delete(`/users/${id}`)
   return resp.data
+}
+// ---------------------remedies----------------------
+
+export const createRemedy = async (data ) => {
+    const resp = await api.post('/remedies', {remedy:data})
+    return resp.data
 }

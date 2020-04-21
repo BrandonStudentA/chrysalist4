@@ -10,7 +10,7 @@ import Register from './components/Register'
 
 import {
   createUser,
-  readAllUser,
+  readAllUsers,
   updateUser,
   destroyUser,
   loginUser,
@@ -27,10 +27,13 @@ class App extends Component {
     super(props);
     this.state = {
       users: [],
-      userForm: {
-        name: "",
-        photo: ""
+      remedyFormData: {
+        title: "",
+        description: "",
+        mood_id: "",
+        user_id: ""
       },
+    
       currentUser: null,
       authFormData: {
         username: "",
@@ -54,18 +57,7 @@ class App extends Component {
     })
   }
 
-  newUser = async (e) => {
-    e.preventDefault();
-    const user = await createUser(this.state.userForm);
-    this.setState(prevState => ({
-      users: [...prevState.users, user],
-      userForm: {
-        username: "",
-        email: "",
-        password: ""
-      }
-    }))
-  }
+  
 
   editUser = async () => {
     const { userForm } = this.state
@@ -91,7 +83,7 @@ class App extends Component {
     this.setState(prevState => ({
       userForm: {
         ...prevState.userForm,
-        [username]: value
+        [name]: value
       }
     }))
   }
@@ -169,7 +161,7 @@ class App extends Component {
         <Route
           exact path="/"
           render={() => (
-            <UsersView
+            <UserView
               currentUser={this.state.currentUser}
               users={this.state.users}
               userForm={this.state.userForm}
@@ -177,14 +169,7 @@ class App extends Component {
               newUser={this.newUser} />
           )}
         />
-        <Route
-          path="/new/user"
-          render={() => (
-            <CreateUser
-              handleFormChange={this.handleFormChange}
-              userForm={this.state.userForm}
-              newUser={this.newUser} />
-          )} />
+        
         <Route
           path="/users/:id"
           render={(props) => {

@@ -33,9 +33,11 @@ ActiveRecord::Schema.define(version: 2020_04_21_034234) do
     t.string "title"
     t.string "description"
     t.bigint "mood_id"
+    t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["mood_id"], name: "index_remedies_on_mood_id"
+    t.index ["user_id"], name: "index_remedies_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

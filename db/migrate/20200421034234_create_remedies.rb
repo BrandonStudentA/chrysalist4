@@ -4,7 +4,7 @@ class CreateRemedies < ActiveRecord::Migration[6.0]
       t.string :title
       t.string :description
       t.references :mood
-
+      t.references :user
       t.timestamps
     end
   end
