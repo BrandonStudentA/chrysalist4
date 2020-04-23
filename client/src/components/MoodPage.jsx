@@ -1,6 +1,7 @@
 import React from "react"
 import Register from "./Register"
 import Login from "./login"
+import LogoutButton from "./logoutButton"
 import { registerUser, verifyUser, viewAllMoods} from './services/api-helper'
 import Moods from './Moods'
 export default class MoodPage extends React.Component{
