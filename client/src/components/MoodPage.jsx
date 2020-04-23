@@ -4,6 +4,10 @@ import Login from "./login"
 import LogoutButton from "./logoutButton"
 import { registerUser, verifyUser, viewAllMoods} from './services/api-helper'
 import Moods from './Moods'
+
+import {
+    removeToken
+  } from './services/api-helper';
 export default class MoodPage extends React.Component{
     constructor(props){
         super(props)
@@ -18,18 +22,16 @@ export default class MoodPage extends React.Component{
               mood_id: ""
             }
         
+        }
+           
+        
+    };
+    
+
+
+            handleLoginButton = () => {
+                this.props.history.push("/login")
             }
-            this.handleLoginClick = this.handleLoginClick.bind(this);
-            this.handleLogoutClick = this.handleLogoutClick.bind(this);
-        //   this.handleSuccessfulAuth = this.handleSuccessfulAuth.bind(this);
-        //   this.handleLogoutClick = this.handleLogoutClick.bind(this);
-};
-      
-
-
-        //   handleLoginClick() {
-        //     this.setState({isLoggedIn: true});
-        //   }
 
             async componentDidMount() {
             this.getMoods();
@@ -47,19 +49,15 @@ export default class MoodPage extends React.Component{
             })
         }
             render(){
-
-               
             
                 return (    
                    
                     
                 
                      <div>
-                    <LoginButton onClick={this.handleLoginClick} />  
+                    <LoginButton onClick={this.handleLoginButton} />  
 
-
-                    
-                    
+                            <div><Register/></div> 
 
                         <h1>Welome To Chrysalis </h1>
                        
@@ -67,11 +65,10 @@ export default class MoodPage extends React.Component{
                         <div> <Moods/> </div>
                             
                             
-                       <LogoutButton onClick={this.handleLogoutClick} />
+                       <LogoutButton onClick={this.handleLoginButton} />
                     
                      
-                            <Register/>
-                            <Login/>
+                            
                                  
                          </div>
                     
