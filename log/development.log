@@ -496,3 +496,755 @@ Migrating to CreateRemedies (20200421034234)
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
   [1m[36mRemedy Create (1.2ms)[0m  [1m[32mINSERT INTO "remedies" ("title", "mood_id", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "Excersice Streches"], ["mood_id", 1], ["user_id", 2], ["created_at", "2020-04-21 17:51:37.413867"], ["updated_at", "2020-04-21 17:51:37.413867"]]
   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2020-04-22 16:45:45 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.2) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.2) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-04-22 16:45:45 -0400
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+):
+  
+pg (1.2.3) lib/pg.rb:58:in `initialize'
+pg (1.2.3) lib/pg.rb:58:in `new'
+pg (1.2.3) lib/pg.rb:58:in `connect'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.2) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.2) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.2) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(717814911757681920)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(717814911757681920)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for ::1 at 2020-04-22 16:53:03 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (2.4ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 94ms (Views: 60.8ms | ActiveRecord: 23.6ms | Allocations: 19376)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 16:54:43 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.7ms | Allocations: 1993)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 16:54:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1993)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 16:54:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.7ms | Allocations: 1993)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 16:55:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.4ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.8ms | Allocations: 1973)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 16:55:21 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2020-04-22 16:59:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.4ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.8ms | Allocations: 2025)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:00:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1973)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:01:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.2ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 1989)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:01:52 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.6ms | Allocations: 1973)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:02:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.2ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 1973)
+
+
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:20 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:24 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:25 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:34 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:36 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:37 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:37 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:37 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for 127.0.0.1 at 2020-04-22 17:04:37 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/login"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:04:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.2ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 1972)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:05:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms | Allocations: 1974)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:05:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.6ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 1.0ms | Allocations: 1976)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:05:59 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 1973)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:06:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.6ms | Allocations: 1973)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:06:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.7ms | Allocations: 1973)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-22 17:41:46 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/fuentes/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/fuentes/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 8.2ms | Allocations: 201)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 868)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2020-04-22 17:41:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/moods" for 127.0.0.1 at 2020-04-22 17:42:01 -0400
+Processing by MoodsController#index as HTML
+  [1m[36mMood Load (1.7ms)[0m  [1m[34mSELECT "moods".* FROM "moods"[0m
+  ↳ app/controllers/moods_controller.rb:8:in `index'
+  [1m[36mRemedy Load (1.0ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."mood_id" = $1[0m  [["mood_id", 1]]
+  ↳ app/controllers/moods_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 8.4ms | ActiveRecord: 11.4ms | Allocations: 5520)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 17:42:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.3ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.8ms | Allocations: 1976)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-04-22 18:03:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:9:in `index'
+  [1m[36mRemedy Load (0.6ms)[0m  [1m[34mSELECT "remedies".* FROM "remedies" WHERE "remedies"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/users_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.6ms | Allocations: 2058)
+
+
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (5018.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chrysalist4_development"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (51.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chrysalist4_development"[0m
+  [1m[35m (68.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chrysalist4_test"[0m
+  [1m[35m (254.4ms)[0m  [1m[35mCREATE DATABASE "chrysalist4_development" ENCODING = 'unicode'[0m
+  [1m[35m (133.0ms)[0m  [1m[35mCREATE DATABASE "chrysalist4_test" ENCODING = 'unicode'[0m
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(717814911757681920)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200414155231)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414155231"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdmins (20200414161529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "admins" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414161529"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMoods (20200421034014)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "moods" ("id" bigserial primary key, "title" character varying, "image_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200421034014"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRemedies (20200421034234)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "remedies" ("id" bigserial primary key, "title" character varying, "description" character varying, "mood_id" bigint, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_remedies_on_mood_id" ON "remedies"  ("mood_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_remedies_on_user_id" ON "remedies"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200421034234"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-22 22:26:48.941431"], ["updated_at", "2020-04-22 22:26:48.941431"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(717814911757681920)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brandon"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brandonstudenta@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Brandon"], ["email", "brandonstudenta@gmail.com"], ["password_digest", "$2a$12$Dw0vz.83fzmDpuhVAiwvzuVsp0QyGm6IT3OoJy7F3MhvfHz5h3Oam"], ["created_at", "2020-04-22 22:31:22.451778"], ["updated_at", "2020-04-22 22:31:22.451778"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(717814911757681920)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(717814911757681920)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (41.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chrysalist4_development"[0m
+  [1m[35m (35.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "chrysalist4_test"[0m
+  [1m[35m (132.3ms)[0m  [1m[35mCREATE DATABASE "chrysalist4_development" ENCODING = 'unicode'[0m
+  [1m[35m (126.8ms)[0m  [1m[35mCREATE DATABASE "chrysalist4_test" ENCODING = 'unicode'[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(717814911757681920)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200414155231)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414155231"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateAdmins (20200414161529)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "admins" ("id" bigserial primary key, "username" character varying, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200414161529"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMoods (20200421034014)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "moods" ("id" bigserial primary key, "name" character varying, "image_url" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200421034014"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRemedies (20200421034234)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "remedies" ("id" bigserial primary key, "title" character varying, "description" character varying, "mood_id" bigint, "user_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_remedies_on_mood_id" ON "remedies"  ("mood_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_remedies_on_user_id" ON "remedies"  ("user_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200421034234"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-22 22:34:37.411646"], ["updated_at", "2020-04-22 22:34:37.411646"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(717814911757681920)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brandon"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brandonstudenta@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Brandon"], ["email", "brandonstudenta@gmail.com"], ["password_digest", "$2a$12$VqRV9LSkqk7lZQjGHesQE.idyKExQVFnV8FUdnnd65DfI0D3KUK8G"], ["created_at", "2020-04-22 22:45:08.245175"], ["updated_at", "2020-04-22 22:45:08.245175"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brandon"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brandonstudenta@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Brandon"], ["email", "brandonstudenta@gmail.com"], ["password_digest", "$2a$12$P7ThxYDldyu9yns66jOS9ezXeSm.QD57WBTTLDMIp9tZ7UNDQz0Ou"], ["created_at", "2020-04-22 22:45:38.542027"], ["updated_at", "2020-04-22 22:45:38.542027"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods" ORDER BY "moods"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMood Destroy (0.2ms)[0m  [1m[31mDELETE FROM "moods"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.5ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sad"], ["image_url", "https://thumbs.dreamstime.com/z/upset-sad-african-american-woman-suffering-loneliness-side-view-sitting-bed-alone-holding-head-hands-girl-has-163556023.jpg"], ["created_at", "2020-04-22 22:45:38.596562"], ["updated_at", "2020-04-22 22:45:38.596562"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.3ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anxiety"], ["image_url", "https://thumbs.dreamstime.com/z/sad-young-man-looking-down-depression-anxiety-disorder-concept-sad-man-looking-down-depression-anxiety-disorder-concept-103178781.jpg"], ["created_at", "2020-04-22 22:45:38.600619"], ["updated_at", "2020-04-22 22:45:38.600619"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.4ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stressed"], ["image_url", "https://thumbs.dreamstime.com/img/pixel.gif"], ["created_at", "2020-04-22 22:45:38.604322"], ["updated_at", "2020-04-22 22:45:38.604322"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (2.1ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brandon"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brandonstudenta@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Brandon"], ["email", "brandonstudenta@gmail.com"], ["password_digest", "$2a$12$qZy9BR0/eHOEscYCeNrZLui/NGC2yzb1AWU5pQpHislaQpfsDEBnW"], ["created_at", "2020-04-23 04:52:17.913229"], ["updated_at", "2020-04-23 04:52:17.913229"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMood Load (0.4ms)[0m  [1m[34mSELECT "moods".* FROM "moods" ORDER BY "moods"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMood Destroy (0.5ms)[0m  [1m[31mDELETE FROM "moods"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.5ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sad"], ["image_url", "https://thumbs.dreamstime.com/z/upset-sad-african-american-woman-suffering-loneliness-side-view-sitting-bed-alone-holding-head-hands-girl-has-163556023.jpg"], ["created_at", "2020-04-23 04:52:17.953352"], ["updated_at", "2020-04-23 04:52:17.953352"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.3ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anxiety"], ["image_url", "https://thumbs.dreamstime.com/z/sad-young-man-looking-down-depression-anxiety-disorder-concept-sad-man-looking-down-depression-anxiety-disorder-concept-103178781.jpg"], ["created_at", "2020-04-23 04:52:17.957660"], ["updated_at", "2020-04-23 04:52:17.957660"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.5ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stressed"], ["image_url", "https://thumbs.dreamstime.com/img/pixel.gif"], ["created_at", "2020-04-23 04:52:17.961357"], ["updated_at", "2020-04-23 04:52:17.961357"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Destroy (3.0ms)[0m  [1m[31mDELETE FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "Brandon"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "brandonstudenta@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "Brandon"], ["email", "brandonstudenta@gmail.com"], ["password_digest", "$2a$12$k2skm6lFQPH/BKqhJTMzWOkNitblVezUxU.KRpx5QmrUOJDzCen7G"], ["created_at", "2020-04-23 04:56:52.625591"], ["updated_at", "2020-04-23 04:56:52.625591"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mMood Load (0.5ms)[0m  [1m[34mSELECT "moods".* FROM "moods" ORDER BY "moods"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mMood Destroy (0.5ms)[0m  [1m[31mDELETE FROM "moods"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.4ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Sad"], ["image_url", "https://thumbs.dreamstime.com/z/upset-sad-african-american-woman-suffering-loneliness-side-view-sitting-bed-alone-holding-head-hands-girl-has-163556023.jpg"], ["created_at", "2020-04-23 04:56:52.664661"], ["updated_at", "2020-04-23 04:56:52.664661"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.3ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Anxiety"], ["image_url", "https://thumbs.dreamstime.com/z/sad-young-man-looking-down-depression-anxiety-disorder-concept-sad-man-looking-down-depression-anxiety-disorder-concept-103178781.jpg"], ["created_at", "2020-04-23 04:56:52.668511"], ["updated_at", "2020-04-23 04:56:52.668511"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMood Create (0.5ms)[0m  [1m[32mINSERT INTO "moods" ("name", "image_url", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Stressed"], ["image_url", "https://thumbs.dreamstime.com/img/pixel.gif"], ["created_at", "2020-04-23 04:56:52.672465"], ["updated_at", "2020-04-23 04:56:52.672465"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m

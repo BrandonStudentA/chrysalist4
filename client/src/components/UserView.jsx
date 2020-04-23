@@ -16,7 +16,7 @@ function UsersView(props) {
             }
             window.scrollTo(0, 0);
           }}>
-          <img alt={user.name} src={user.photo} />
+          
           <h3>
             <p>{user.name}</p>
           </h3>
@@ -29,10 +29,9 @@ function UsersView(props) {
           window.scrollTo(0, 0);
         }}>
         <img
-          alt="Create a new user"
-          src="https://image.flaticon.com/icons/png/512/14/14980.png"
-          className="plus-sign" />
-        <h3>Create a new user</h3>
+          alt="Create a new Remedy"
+          />
+        <h3>Create a new Remedy</h3>
       </div>
     </div>
   )

@@ -1,8 +1,8 @@
 class CreateMoods < ActiveRecord::Migration[6.0]
   def change
     create_table :moods do |t|
-      t.string :title
-
+      t.string :name
+      t.string :image_url
       t.timestamps
     end
   end
