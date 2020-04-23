@@ -7,8 +7,12 @@ class LoginButton extends Component {
    
 
   render() {
-    return
-    //..
+    return(
+      <div>
+      p
+    </div>
+  
+    )
   }
 }
 export default LoginButton; 

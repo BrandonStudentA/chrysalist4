@@ -7,7 +7,9 @@ class LogoutButton extends Component {
 
   render() {
 
-    return 
+    return (
+      <div></div>
+    )
   }
 }
 export default LogoutButton; 

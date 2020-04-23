@@ -1,5 +1,5 @@
 import React from 'react';
-import { registerUser} from './services/api-helper'
+import { registerUser} from '../services/api-helper'
 import { withRouter } from 'react-router-dom';
 
 // This component handles our register form

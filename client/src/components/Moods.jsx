@@ -1,48 +1,47 @@
+/* eslint-disable react/no-direct-mutation-state */
 import React from "react"
 
-import CreateRemedies from "./CreateRemedies"
-import { withRouter } from 'react-router-dom';
+// import CreateRemedies from "./CreateRemedies"
+// import { withRouter } from 'react-router-dom';
 import {
   viewAllMoods,
   
-} from './services/api-helper';
+} from '../services/api-helper';
 
 export default class Moods extends React.Component{
     constructor(props){
       super(props)
-    this.State = {
-         moods: {
-           mood_id: null,
-           name: "",
-           image_url: "",
-         } 
-      }
+    this.state = {
+         moods: null
+      
     }
-   
+  }
 
 
     async componentDidMount() {
     const moods = await viewAllMoods();
-    return this.setState({ moods }) 
+    console.log("hello")
+     this.setState({ moods }) 
     }
 
      render() {
-         this.state.moods = this.state.moods.map((mood) =>{
+       const moods = this.state.moods && this.state.moods.map((mood, index) =>{
             return (
-              <div>
-                  <h3>All Posts</h3>
+              <div key={index}>
+                 
           
-                   <tbody>key={this.state.moods.mood.id}
-                    <td><img src={`/moods/${this.state.moods.image_url}`}/> </td>
-                    <h3>{this.state.moods.name}</h3>
-                    </tbody> 
+                   <div >
+                    <td><img src={mood.image_url} alt=""/> </td>
+                    <h3>{mood.name}</h3>
+                    
+                    </div> 
                     </div>
                       )
                     });
 
                     return(
                       <div>
-                          {this.state.moods}
+                          {moods}
                       </div>
                   )
               }

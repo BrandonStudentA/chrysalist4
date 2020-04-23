@@ -7,7 +7,7 @@ import MoodPage from './components/MoodPage'
 import Moods from './components/Moods'
 // import UserPage from './components/UserPage'
 // import CreateRemedy from './components/CreateRemedies'
-import Login from './components/login'
+import Login from './components/Login'
 import Register from './components/Register'
 import {
   
@@ -174,7 +174,7 @@ render(){
             formData={this.state.authFormData} />)} />
         <Route exact path="/register" render={() => (
           <Register />)} />
-        <Route
+        {/* <Route
           exact path="/"
           render={() => (
             <UserView
@@ -183,7 +183,7 @@ render(){
               userForm={this.state.userForm}
               handleFormChange={this.handleFormChange}
               newUser={this.newUser} />
-          )}/>
+          )}/> */}
           <Route
           exact path="/"
           render={() => (

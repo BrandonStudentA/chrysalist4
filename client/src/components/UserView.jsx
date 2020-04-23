@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router';
 
-function UsersView(props) {
+function UserView(props) {
   return (
     <div className="user-container">
       {props.users.map(user => (
@@ -37,4 +37,4 @@ function UsersView(props) {
   )
 }
 
-export default withRouter(UsersView)
+export default withRouter(UserView)

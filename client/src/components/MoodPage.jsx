@@ -1,9 +1,9 @@
 import React from "react"
 import Register from "./Register"
-import Login from "./login"
+
 import LoginButton from './LoginButton'
-import LogoutButton from "./logoutButton"
-import { registerUser, verifyUser, viewAllMoods} from './services/api-helper'
+import LogoutButton from "./LogoutButton"
+import { verifyUser } from '../services/api-helper'
 import Moods from './Moods'
 
 
@@ -30,7 +30,7 @@ export default class MoodPage extends React.Component{
 
            
             async componentDidMount() {
-            this.getMoods();
+           
             const currentUser = await verifyUser();
             if (verifyUser === true)
                 this.setState({ currentUser})
