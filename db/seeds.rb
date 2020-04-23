@@ -7,29 +7,29 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# User.delete_all()
-# User.create!(username: 'Brandon', email: "brandonstudenta@gmail.com", password: "123457" )
+User.delete_all()
+User.create!(username: 'Brandon', email: "brandonstudenta@gmail.com", password: "123457" )
 
 
 
-# Remedy.create!(title:"Excercise: MOVE YOUR BODY", description:"Known to release happy  endorphins!!", mood_id: 1, user_id: 1)
+Remedy.create!(title:"Excercise: MOVE YOUR BODY", description:"Known to release happy  endorphins!!", mood_id: 1, user_id: 1)
 
 
 
-# Mood.delete_all()
+Mood.delete_all()
 
-# Mood.create!([
-#     { 
-#       name: "Sad",
-#       image_url: "https://thumbs.dreamstime.com/z/upset-sad-african-american-woman-suffering-loneliness-side-view-sitting-bed-alone-holding-head-hands-girl-has-163556023.jpg"
-#     }, 
-#     { 
-#       name: "Anxiety",
-#       image_url: "https://thumbs.dreamstime.com/z/sad-young-man-looking-down-depression-anxiety-disorder-concept-sad-man-looking-down-depression-anxiety-disorder-concept-103178781.jpg"
-#     },
-#     { 
-#       name: "Stressed",
-#       image_url: "https://thumbs.dreamstime.com/img/pixel.gif" 
-#     }
-#   ])
+Mood.create!([
+    { 
+      name: "Sad",
+      image_url: "https://thumbs.dreamstime.com/z/upset-sad-african-american-woman-suffering-loneliness-side-view-sitting-bed-alone-holding-head-hands-girl-has-163556023.jpg"
+    }, 
+    { 
+      name: "Anxiety",
+      image_url: "https://thumbs.dreamstime.com/z/sad-young-man-looking-down-depression-anxiety-disorder-concept-sad-man-looking-down-depression-anxiety-disorder-concept-103178781.jpg"
+    },
+    { 
+      name: "Stressed",
+      image_url: "https://thumbs.dreamstime.com/img/pixel.gif" 
+    }
+  ])
   
