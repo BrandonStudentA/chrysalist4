@@ -1,25 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom';
 import { withRouter } from 'react-router';
-import UserView from './components/'
-import EditUse from './components/EditUser'
+import UserView from './components/UserView'
+// import EditUse from './component/EditUser'
 import MoodPage from './components/MoodPage'
 import Moods from './components/Moods'
-import UserPage from './components/UserPage'
-import CreateRemedy from './components/CreateRemedies'
+// import UserPage from './components/UserPage'
+// import CreateRemedy from './components/CreateRemedies'
+import Login from './components/login'
+import Register from './components/Register'
 import {
+  
+  createRemedy,
   verifyUser,
+  readAllRemedies,
   updateUser,
   destroyUser,
   readAllUsers,
 } from './services/api-helper';
-import MoodPage from './components/MoodPage';
+
 import Header from './components/Header';
 
 import './App.css';
 // import Header from './components/Header';
 
- export default class App extends React.Component{
+  class App extends React.Component{
 
 
  constructor(props) {
@@ -197,7 +202,7 @@ render(){
             const remedy = this.state.remedies.find(el => el.id === parseInt(id));
             return <Moods
             id={id}
-            remedy={remdey}
+            remedy={remedy}
             handleFormChange={this.handleFormChange}
             mountRemedyEditForm={this.mountRemedyEditForm}
             editRemedy={this.editRemedy}
@@ -212,7 +217,7 @@ render(){
             const remedy = this.state.remedies.find(el => el.id === parseInt(id));
             return <Moods
               id={id}
-              remedy={remdey}
+               remedy={remedy}
               handleFormChange={this.handleFormChange}
               mountRemedyEditForm={this.mountRemedyEditForm}
               editRemedy={this.editRemedy}

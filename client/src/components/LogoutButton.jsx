@@ -6,7 +6,7 @@ class LogoutButton extends Component {
 
   render() {
 
-    return <Button color="red"/>
+    return 
   }
 }
 export default LogoutButton; 

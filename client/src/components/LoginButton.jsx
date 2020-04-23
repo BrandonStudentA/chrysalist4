@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
 class LoginButton extends Component {
-
+    
+  
    
 
   render() {
-
-    return <Button color="blue"/>
+    return
+    //..
   }
 }
 export default LoginButton; 

@@ -58,7 +58,7 @@ export const createRemedy = async (data ) => {
     const resp = await api.post('new/remedies', {remedy:data})
     return resp.data
 }
-export const viewRemedie = async () => {
+export const readAllRemedies = async (id, mood_id) => {
   const resp = await api.get(`/remedies/${id}/${mood_id}`)
   return resp.data
 }

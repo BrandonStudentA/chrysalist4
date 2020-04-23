@@ -29,7 +29,7 @@ export default class Login extends React.Component{
    handleLogin= async (e) => {
    e.preventDefault();
    const currentUser = await loginUser(this.state.authFormData);
-   user ? this.setState({  currentUser }) : alert("wrong username or password")
+   currentUser ? this.setState({  currentUser }) : alert("wrong username or password")
    
    }
 

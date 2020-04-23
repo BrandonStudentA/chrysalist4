@@ -1,13 +1,12 @@
 import React from "react"
 import Register from "./Register"
 import Login from "./login"
+import LoginButton from './LoginButton'
 import LogoutButton from "./logoutButton"
 import { registerUser, verifyUser, viewAllMoods} from './services/api-helper'
 import Moods from './Moods'
 
-import {
-    removeToken
-  } from './services/api-helper';
+
 export default class MoodPage extends React.Component{
     constructor(props){
         super(props)
@@ -46,7 +45,7 @@ export default class MoodPage extends React.Component{
                     
                 
                      <div>
-                    <LoginButton onClick={props.handleLoginButton} />  
+                    <LoginButton onClick={this.props.handleLoginButton} />  
 
                             <div><Register/></div> 
 
@@ -56,7 +55,7 @@ export default class MoodPage extends React.Component{
                         <div> <Moods/> </div>
                             
                             
-                       <LogoutButton onClick={props.handleLoginButton} />
+                       <LogoutButton onClick={this.props.handleLoginButton} />
                     
                      
                             

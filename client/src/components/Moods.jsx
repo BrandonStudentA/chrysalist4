@@ -1,7 +1,11 @@
 import React from "react"
-import Remedies from "./remedies"
+
+import CreateRemedies from "./CreateRemedies"
 import { Route, Link,BrowserRouter } from 'react-router-dom';
-import {viewAllMoods} from './services/api-helper'
+import {
+  viewAllMoods,
+  
+} from './services/api-helper';
 
 export default class Moods extends React.Component{
     constructor(props){
@@ -18,7 +22,7 @@ export default class Moods extends React.Component{
 
 
     async componentDidMount() {
-    const moods = await viewAllMoods;
+    const moods = await viewAllMoods();
     return this.setState({ moods }) 
     }
 
