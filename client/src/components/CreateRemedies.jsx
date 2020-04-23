@@ -50,7 +50,7 @@ class CreateRemedies extends Component {
       
     )
  } 
- export default CreateRemedies
+ export  CreateRemedies
 
 //   componentDidMount() {
 //     this.props.mountRemedyEditForm(this.props.id);
