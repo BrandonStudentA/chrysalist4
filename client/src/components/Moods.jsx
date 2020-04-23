@@ -2,33 +2,50 @@ import React from "react"
 import Remedies from "./remedies"
 import {viewAllMoods} from './services/api-helper'
 
-
- async const Moods = () => {
-   
-  
-   
-   
-
-    render() 
-    if  (!user || user  ){
-    return (
-       currentUser = await viewAllMoods(
-            
-           
-      <Card  index={mood.mood_id}>
-        <MoodLogo>
-          <img src={mood.image_url} alt={this.name} width="50"/>
-        </MoodLogo>
-        
-        <div index={"/moods/name"}>
-
-
-          <h1>{this.mood.title}</h1>
-        </div>
-           <Link path={"/remedies/mood:id"}/>
-       </Card>)
-        )
+ const Moods = React.createClass({
+    constructor(props){
+      super(props)
+    this.State = {
+         moods: [] 
       }
-     }
+    },
    
-  export default Moods 
+
+
+    async componentDidMount() {
+    const moods = await viewAllMoods();
+    return this.setState({ moods }) 
+    },
+
+    render() {
+      moods = this.state.moods.map((mood) =>{
+      return (
+        <div>
+          <h3>All Posts</h3>
+          
+            <tbody>key={mood.id}
+            <td><img src={`/moods/${image_url}`}/> </td>
+            <h3>{mood.name}</h3>
+            {
+            this.props.remedies = this.props.remedies.map((remedie,index) => {
+                return (
+                  <tr index={mood.id}>
+                    <td>
+                      <Link to={`/remedies/${mood_id}`}>
+                        {remedie.title}
+                      </Link>
+                    </td>
+                    
+                  </tr>
+                )
+              })
+            }
+            </tbody>
+        
+        </div>
+      )
+    
+    }
+  }
+}
+  export defualt Moods
