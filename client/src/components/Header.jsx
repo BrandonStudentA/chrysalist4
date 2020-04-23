@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LogoutButton from './LogoutButton'
 import LoginButton from './LoginButton'
+import { withRouter } from 'react-router-dom';
 
 export default function Header(props) {
   return (

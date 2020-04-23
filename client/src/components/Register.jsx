@@ -1,5 +1,7 @@
 import React from 'react';
 import { registerUser} from './services/api-helper'
+import { withRouter } from 'react-router-dom';
+
 // This component handles our register form
 export default class Register extends React.Component{
    constructor(props){

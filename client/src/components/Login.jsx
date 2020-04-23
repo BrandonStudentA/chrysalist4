@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { loginUser} from './services/api-helper'
+import { withRouter } from 'react-router-dom';
 
 // This component handles our login form and has a link to the register form
 export default class Login extends React.Component{

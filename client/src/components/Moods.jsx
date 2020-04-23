@@ -1,7 +1,7 @@
 import React from "react"
 
 import CreateRemedies from "./CreateRemedies"
-import { Route, Link,BrowserRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import {
   viewAllMoods,
   

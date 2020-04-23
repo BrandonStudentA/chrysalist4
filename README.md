@@ -40,6 +40,61 @@ This App will have an Admin who will be able to Create, Read, Update, Delete con
 
 This will be a starting point for luanch with the Objective to build upon.
 
+Routes:\
 
+emedies_path 	GET 	/remedies(.:format) 	
+
+remedies#index
+	POST 	/remedies(.:format) 	
+
+remedies#create
+remedy_path 	GET 	/remedies/:id(.:format) 	
+
+remedies#show
+	PATCH 	/remedies/:id(.:format) 	
+
+remedies#update
+	PUT 	/remedies/:id(.:format) 	
+
+remedies#update
+	DELETE 	/remedies/:id(.:format) 	
+
+remedies#destroy
+moods_path 	GET 	/moods(.:format) 	
+
+moods#index
+	POST 	/moods(.:format) 	
+
+moods#create
+mood_path 	GET 	/moods/:id(.:format) 	
+
+moods#show
+	PATCH 	/moods/:id(.:format) 	
+
+moods#update
+	PUT 	/moods/:id(.:format) 	
+
+moods#update
+	DELETE 	/moods/:id(.:format) 	
+
+moods#destroy
+users_path 	GET 	/users(.:format) 	
+
+users#index
+	POST 	/users(.:format) 	
+
+users#create
+user_path 	GET 	/users/:id(.:format) 	
+
+users#show
+	PATCH 	/users/:id(.:format) 	
+
+users#update
+	PUT 	/users/:id(.:format) 	
+
+users#update
+	DELETE 	/users/:id(.:format) 	
+
+users#destroy
 
 # Chrysalisp-4
