@@ -1,19 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LogoutButton from './LogoutButton'
+import LoginButton from './LoginButton'
 
 export default function Header(props) {
   return (
     <header>
       <h1><Link to='/' onClick={props.resetForm}>Chrysalist Mood App</Link></h1>
       <div>
-        {props.currentadmin
+        {props.currentUser
           ?
           <>
             <p>{props.currentadmin.username}</p>
-            <button onClick={props.handleLogout}>logout</button>
+            <LogoutButton onClick={props.handleLogout} placeholder="logout"/>
           </>
           :
-          <button onClick={props.handleLoginButton}>Login/register</button>
+          <LoginButton onClick={props.handleLoginButton} placeholder="Login/register"/>
         }
       </div>
     </header>

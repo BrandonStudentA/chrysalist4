@@ -29,10 +29,7 @@ export default class MoodPage extends React.Component{
     
 
 
-            handleLoginButton = () => {
-                this.props.history.push("/login")
-            }
-
+           
             async componentDidMount() {
             this.getMoods();
             const currentUser = await verifyUser();
@@ -41,13 +38,7 @@ export default class MoodPage extends React.Component{
             }
             
 
-            handleLogoutClick = () => {
-            localStorage.removeItem("authToken");
-            removeToken();
-            this.setState({
-              currentUser: null
-            })
-        }
+          
             render(){
             
                 return (    
@@ -55,7 +46,7 @@ export default class MoodPage extends React.Component{
                     
                 
                      <div>
-                    <LoginButton onClick={this.handleLoginButton} />  
+                    <LoginButton onClick={props.handleLoginButton} />  
 
                             <div><Register/></div> 
 
@@ -65,7 +56,7 @@ export default class MoodPage extends React.Component{
                         <div> <Moods/> </div>
                             
                             
-                       <LogoutButton onClick={this.handleLoginButton} />
+                       <LogoutButton onClick={props.handleLoginButton} />
                     
                      
                             

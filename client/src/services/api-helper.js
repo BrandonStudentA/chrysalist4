@@ -6,6 +6,8 @@ const api = axios.create({
   baseURL: baseUrl
 })
 
+
+
 export const loginUser = async (loginData) => {
   const resp = await api.post('/auth/login', { auth: loginData })
   localStorage.setItem('authToken', resp.data.token);
@@ -53,7 +55,7 @@ export const destroyUser = async (id) => {
 // ---------------------remedies----------------------
 
 export const createRemedy = async (data ) => {
-    const resp = await api.post('/remedies', {remedy:data})
+    const resp = await api.post('new/remedies', {remedy:data})
     return resp.data
 }
 export const viewRemedie = async () => {
