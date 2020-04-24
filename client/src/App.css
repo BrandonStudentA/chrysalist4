@@ -1,38 +1,76 @@
-/* .App {
+body {
   text-align: center;
+  background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Free-Chalkboard-Backgrounds.jpg");
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  font-family: 'Permanent Marker', cursive;
+  text-align: left;
+  padding: 2rem;
+  background: linear-gradient(to right, #d6d6d6, #b1b1b1, #d6d6d6);
+  position: fixed;
+  width: 100%;
+  top: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+header>h1>a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+header>div>button, p {
+  margin: 0 3rem;
+}
+
+.auth-container {
+  margin: 8rem 36rem;
+  background: #b1b1b1;
+  padding: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.user-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 10px;
+  margin: 8rem 10rem;
+}
+
+.user-card {
+  background: #d6d6d6;
+  cursor: pointer;
+}
+
+.user-page {
+  margin: 8rem auto;
+  background: #d6d6d6;
+  width: 20rem;
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.create-form {
+  display: grid;
+  width: 20rem;
+  margin: 15rem auto;
+  background: #d6d6d6;
+  padding: 2rem 2rem 3.5rem 2rem;
+}
+
+img {
+  max-width: 15rem;
+  padding: 2rem;
+}
+
+.plus-sign {
+  max-width: 4rem;
+  cursor: pointer;
