@@ -231,4 +231,3 @@ render(){
 }
 
 export default withRouter(App);
-
