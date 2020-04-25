@@ -1,31 +1,42 @@
 import React from 'react';
 import { withRouter } from 'react-router';
+import './App.css';
 
-function UserView(props) {
+
+class  UserView extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    console.log(this.props)
+}
+  
+
+render(){
   return (
     <div className="user-container">
-      {props.users.map(user => (
+      {this.props.users.map(this.props.user  (
         <div
-          key={user.id}
+          key={this.props.id}
           className="user-card"
           onClick={(e) => {
-            if (props.currentUser) {
-              props.history.push(`/users/${user.id}`);
+            if (this.props.currentUser) {
+              this.props.history.push(`/users/${this.props.props.id}`);
             } else {
-              props.history.push(`/login`);
+              this.props.history.push(`/login`);
             }
             window.scrollTo(0, 0);
           }}>
           
           <h3>
-            <p>{user.name}</p>
+            <p>{this.props.username}</p>
           </h3>
         </div>
       ))}
       <div
         className="user-card"
         onClick={() => {
-          props.history.push('/new/user');
+          this.props.history.push('/new/user');
           window.scrollTo(0, 0);
         }}>
         <img
@@ -37,4 +48,11 @@ function UserView(props) {
   )
 }
 
-export default withRouter(UserView)
+
+
+}
+export default withRouter(UserView);
+
+
+
+
