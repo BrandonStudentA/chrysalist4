@@ -24,7 +24,7 @@ import Header from './components/Header';
 import './App.css';
 // import Header from './components/Header';
 
-  class App extends React.Component{
+class App extends React.Component{
 
 
  constructor(props) {
@@ -41,11 +41,11 @@ import './App.css';
 
 
 async componentDidMount() {
-  this.getUsers();
-  const currentUser = await verifyUser();
+  const currentUser = await verifyUser(){
   if (currentUser) {
     this.setState({ currentUser })
   }
+}
 }
 
 getUsers = async () => {
