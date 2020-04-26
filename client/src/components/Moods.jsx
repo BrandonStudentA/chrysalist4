@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'React'
 import {
   viewAllMoods,
   
 } from '../services/api-helper';
-export  class Moods extends React.Component{
+export  default class Moods extends React.Component{
     constructor(props){
       super(props)
     this.state = {
