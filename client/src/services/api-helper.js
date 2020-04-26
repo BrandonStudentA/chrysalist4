@@ -32,7 +32,10 @@ export const verifyUser = async () => {
   return false
 }
 
-
+export const showUser = async (id) => {
+  const resp = await api.put(`/users/${id}`)
+  return resp.data.user
+}
 
 export const removeToken = () => {
   api.defaults.headers.common.authorization = null;
