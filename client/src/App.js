@@ -179,6 +179,7 @@ render(){
               handleLogout={this.handleLogout}
               currentUser={this.state.currentUser}
             />
+     
             <Route exact path="/login" render={() => (
               <Login
                 handleLogin={this.handleLogin}

@@ -1,14 +1,9 @@
-/* eslint-disable react/no-direct-mutation-state */
-import React from "react"
-
-// import CreateRemedies from "./CreateRemedies"
-// import { withRouter } from 'react-router-dom';
+import React from 'react'
 import {
   viewAllMoods,
   
 } from '../services/api-helper';
-
-export default class Moods extends React.Component{
+export  class Moods extends React.Component{
     constructor(props){
       super(props)
     this.state = {
@@ -27,23 +22,26 @@ export default class Moods extends React.Component{
      render() {
        const moods = this.state.moods && this.state.moods.map((mood, index) =>{
             return (
-              <div key={index}>
+          
+                      <div key={index}>
                  
           
-                   <div >
-                    <td><img src={mood.image_url} alt=""/> </td>
-                    <h3>{mood.name}</h3>
+                      <div >
+                      <td><img src={mood.image_url} alt=""/> </td>
+                     <h3>{mood.name}</h3>
                     
-                    </div> 
-                    </div>
+                      </div> 
+                     </div>
                       )
-                    });
+                       });
 
-                    return(
-                      <div>
+                      return(
+                        <div>
                           {moods}
-                      </div>
+                       </div>
+
+                
                   )
               }
- 
+
 }

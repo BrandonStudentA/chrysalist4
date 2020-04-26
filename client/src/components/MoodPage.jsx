@@ -1,8 +1,6 @@
 import React from "react"
 import Register from "./Register"
 
-import LoginButton from './LoginButton'
-import LogoutButton from "./LogoutButton"
 import { verifyUser } from '../services/api-helper'
 import Moods from './Moods'
 
@@ -12,7 +10,7 @@ export default class MoodPage extends React.Component{
         super(props)
         this.state = {
             currentUser: " ",
-            isLoggedIn:!true,
+            isLoggedIn:true,
             mood: [null],
             remedy: {
               title: "",
@@ -42,25 +40,11 @@ export default class MoodPage extends React.Component{
             
                 return (    
                    
-                    
                 
                      <div>
-                    <LoginButton onClick={this.props.handleLoginButton} />  
-
-                            <div><Register/></div> 
-
-                        <h1>Welome To Chrysalis </h1>
-                       
-
-                        <div> <Moods/> </div>
-                            
-                            
-                       <LogoutButton onClick={this.props.handleLoginButton} />
-                    
-                     
-                            
-                                 
-                         </div>
+                      <Register/>
+                 
+                     </div>
                     
                     
                 )
